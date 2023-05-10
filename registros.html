@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cssR.css"/>
+</head>
+<body>
+    <div class="grid">
+        <div class="item item1">
+        <div class="card">
+            <figure><img src="R.png" class="cta"></figure>
+            <h2>Tutorias pares</h2>
+        </div>
+        <div class="card">
+            <figure><img src="R.png" class="cta2"></figure>
+            <h2>Asesorias</h2>
+        </div>
+    </div>
+        <div class="item item2">
+            <div class="card">
+                <figure><img src="R.png" alt=""></figure>
+                <h2>Tutorias individuales</h2>
+            </div>
+            <div class="card">
+                <figure><img src="R.png" alt=""></figure>
+                <h2>Tutorias grupales</h2>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-container">
+        <div class="modal modal-close">
+            <p class="close">X</p>
+                <form class="form"  action="guardar2.php" method="POST">
+                  <p>ALUMNOS TUTORES</p>
+                  <br>
+                  <label for="nombre">Nombre del alumno</label>
+                  <br>
+                  <input type="text" name="nombre" placeholder="Nombre" required>
+                  <p>Numero de control</p>
+                  <label for="numero de control"></label>
+                  <input type="numero" name="numeroC" placeholder="numero de control" required>
+                  <p>Semestre</p>
+                  <label for="semestre"></label>
+                  <select id="dropdown" name="semestre" class="form-control" required="">
+                    <option disabled="" selected="" value="">Seleccione</option>
+                    <option value="student">Segundo</option>
+                    <option value="job">Cuarto</option>
+                    <option value="learner">Quinto</option>
+                  </select><br>
+                  <p>Especialidad</p>
+                  <select id="dropdown" name="especialidad" class="form-control" required="">
+                    <option disabled="" selected="" value="">Seleccione</option>
+                    <option value="student">Programacion</option>
+                    <option value="job">Mecatronica</option>
+                    <option value="learner">Bioteconologia</option>
+                    <option value="preferNo">Pymes</option>
+                    <option value="other">Puericultura</option>
+                    <option value="other">Robótica industrial</option>
+                  </select>
+                  <br>
+                  <input type="submit" value="Registrar">
+                  
+                </form>
+            
+        </div>
+    </div>
+
+
+
+
+    <div class="modal-container2" id="modal-container2">
+        <div class="modal2 modal-close2">
+            <p class="close2">X</p>
+                <form class="form"  action="guardar.php" method="POST">
+                  <p>ALUMNOS TUTORES</p>
+                  <br>
+                  <label for="nombre">Nombre del alumno</label>
+                  <br>
+                  <input type="text" name="nombre" placeholder="Nombre" required>
+                  <p>Numero de control</p>
+                  <label for="numero de control"></label>
+                  <input type="numero" name="numero de conntrol" placeholder="numero de control" required>
+                  <p>Semestre</p>
+                  <label for="semestre"></label>
+                  <select id="dropdown" name="role" class="form-control" required="">
+                    <option disabled="" selected="" value="">Seleccione</option>
+                    <option value="student">Segundo</option>
+                    <option value="job">Cuarto</option>
+                    <option value="learner">Quinto</option>
+                  </select><br>
+                  <p>Especialidad</p>
+                  <select id="dropdown" name="role" class="form-control" required="">
+                    <option disabled="" selected="" value="">Seleccione</option>
+                    <option value="student">Programacion</option>
+                    <option value="job">Mecatronica</option>
+                    <option value="learner">Bioteconologia</option>
+                    <option value="preferNo">Pymes</option>
+                    <option value="other">Puericultura</option>
+                    <option value="other">Robótica industrial</option>
+                  </select>
+                  <br>
+                  <input type="submit" value="Registrar">
+                  
+                </form>
+            
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
